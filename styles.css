@@ -4,22 +4,21 @@
 }
 
 body {
+    background-color: hsl(205, 33%, 90%);
     display: flex;
     justify-content: center;
-    background-color: hsl(205, 33%, 90%);
 }
 
 .content {
     background: white;
+    border-radius: 5px;
     color: hsl(219, 12%, 42%);
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 16px;
-    padding: 20px;
     margin: 10px;
-    border-radius: 5px;
     max-width: 800px;
+    padding: 20px;
 }
-
 
 h1 {
     color: hsl(224, 21%, 14%);
@@ -31,10 +30,6 @@ h2 {
     font-weight: 500;
 }
 
-h2 a {
-    color: hsl(219, 12%, 42%);
-}
-
 p {
     padding-bottom: 2px;
 }
@@ -44,29 +39,29 @@ a {
 }
 
 header {
+    align-items: baseline;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: baseline;
     margin-bottom: 30px;
 }
 
 #number {
     background: hsl(219, 85%, 26%);
-    color: white;
     border-radius: 5px;
-    padding: 0 10px;
+    color: white;
     margin-left: 5px;
+    padding: 0 10px;
 }
 
 .notification {
-    margin-bottom: 20px;
-    border-radius: 5px;
+    align-items: flex-start;
     background: hsl(210, 60%, 98%);
-    padding: 20px 20px 20px 5px;
+    border-radius: 5px;
     display: flex;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 5px;
 }
 
 .avatar {
@@ -95,8 +90,8 @@ i {
 }
 
 .post-text {
-    font-weight: 800;
     color: hsl(219, 12%, 42%);
+    font-weight: 800;
 }
 
 .group {
@@ -106,10 +101,10 @@ i {
 
 .pm {
     border: 1px solid hsl(219, 14%, 63%);
-    color: hsl(219, 12%, 42%);
     border-radius: 5px;
+    color: hsl(219, 12%, 42%);
+    margin-top: 15px;
     padding: 15px;
-    margin: 15px 0;
 }
 
 .photo {
@@ -120,20 +115,17 @@ i {
 
 .attribution {
     font-size: 11px;
-    text-align: center;
     margin-top: 50px;
+    text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
 
-
-/* TABLETISH STYLES (aka as soon as the screen could compensate the larger margins) */
 @media (min-width: 550px) {
-
     .content {
-        padding: 50px;
         margin: 50px;
+        padding: 50px;
     }
 }
