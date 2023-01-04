@@ -8,6 +8,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/5fa536c3c8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,91 +19,102 @@
 
 <body>
 
-    <header>
-        <h1>Notifications <span id="number">3</span></h1>
-        <h2>Mark all as read</h2>
-    </header>
+    <div class="content">
+        <header>
+            <h1>Notifications <span id="number">3</span></h1>
+            <h2><a href="#">Mark all as read</a></h2>
+        </header>
 
-    <div id="main">
-        <div class="notification">
-            <figure class="avatar">
-                <img src="images/avatar-mark-webber.webp" alt="Mark Webber's profile pic">
-            </figure>
-            <div class="notif-text">
-                <p><span class="name">Mark Webber</span> reacted to your recent post <span class="post-text">My first tournament today!</span> <i class="fa-solid fa-circle"></i></p>
-                <p class="time-stamp">1m ago</p>
+        <div id="main">
+            <div class="notification">
+                <figure class="avatar">
+                    <a href="#"><img src="images/avatar-mark-webber.webp" alt="Mark Webber's profile pic"></a>
+                </figure>
+                <div class="notif-text">
+                    <p><a href="#" class="name">Mark Webber</a> reacted to your recent post <a href="#" class="post-text">My first tournament today!</a> <i class="fa-solid fa-circle"></i></p>
+                    <p class="time-stamp">1m ago</p>
+                </div>
+            </div>
+
+            <div class="notification">
+                <figure class="avatar">
+                    <a href="#"><img src="images/avatar-angela-gray.webp" alt="Angela Gray's profile pic"></a>
+                </figure>
+                <div class="notif-text">
+                    <p><a href="#" class="name">Angela Gray</a> followed you <i class="fa-solid fa-circle"></i></p>
+                    <p class="time-stamp">5m ago</p>
+                </div>
+            </div>
+
+            <div class="notification">
+                <figure class="avatar">
+                    <a href="#"><img src="images/avatar-jacob-thompson.webp" alt="Jacob Thompson's profile pic"></a>
+                </figure>
+                <div class="notif-text">
+                    <p><a href="#" class="name">Jacob Thompson</a> has joined your group <a href="#" class="group">Chess Club</a> <i class="fa-solid fa-circle"></i></p>
+                    <p class="time-stamp">1 day ago</p>
+                    <a href="#">
+                        <p class="pm">
+                            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="notification">
+                <figure class="avatar">
+                    <a href=""><img src="images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin's profile pic"></a>
+                </figure>
+                <div class="notif-text">
+                    <p><a href="#" class="name">Rizky Hasanuddin</a> sent you a private message <i class="fa-solid fa-circle"></i></p>
+                    <p class="time-stamp">5 days ago</p>
+                    <a href="#">
+                        <p class="pm">
+                            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="notification">
+                <figure class="avatar">
+                    <a href="#"><img src="images/avatar-kimberly-smith.webp" alt="Kimberly Smith's profile pic"></a>
+                </figure>
+                <div class="photo">
+                    <div class="notif-text">
+                        <p><a href="#" class="name">Kimberly Smith</a> commented on your picture <i class="fa-solid fa-circle"></i></p>
+                        <p class="time-stamp">1 week ago</p>
+                    </div>
+                    <figure>
+                        <a href="#"><img src="images/image-chess.webp" alt="Woman sitting behind chess board"></a>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="notification">
+                <figure class="avatar">
+                    <a href="#"><img src="images/avatar-nathan-peterson.webp" alt="Nathan Peterson's profile pic"></a>
+                </figure>
+                <div class="notif-text">
+                    <p><a href="#" class="name">Nathan Peterson</a> reacted to your recent post <a href="#" class="post-text">5 end-game strategies to increase your win rate</a> <i class="fa-solid fa-circle"></i></p>
+                    <p class="time-stamp">2 weeks ago</p>
+                </div>
+            </div>
+
+            <div class="notification">
+                <figure class="avatar">
+                    <a href="#"><img src="images/avatar-anna-kim.webp" alt="Anna Kim's profile pic"></a>
+                </figure>
+                <div class="notif-text">
+                    <p><a href="#" class="name">Anna Kim</a> left the group <a href="#" class="group">Chess Club</a> <i class="fa-solid fa-circle"></i></p>
+                    <p class="time-stamp">2 weeks ago</p>
+                </div>
             </div>
         </div>
 
-        <div class="notification">
-            <figure class="avatar">
-                <img src="images/avatar-angela-gray.webp" alt="Angela Gray's profile pic">
-            </figure>
-            <div class="notif-text">
-                <p><span class="name">Angela Gray</span> followed you <i class="fa-solid fa-circle"></i></p>
-                <p class="time-stamp">5m ago</p>
-            </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://allyceamidon.com/">Allyce Amidon</a>.
         </div>
-
-        <div class="notification">
-            <figure class="avatar">
-                <img src="images/avatar-jacob-thompson.webp" alt="Jacob Thompson's profile pic">
-            </figure>
-            <div class="notif-text">
-                <p><span class="name">Jacob Thompson</span> has joined your group <span class="group">Chess Club</span> <i class="fa-solid fa-circle"></i></p>
-                <p class="time-stamp">1 day ago</p>
-            </div>
-        </div>
-
-        <div class="notification">
-            <figure class="avatar">
-                <img src="images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin's profile pic">
-            </figure>
-            <div class="notif-text">
-                <p><span class="name">Rizky Hasanuddin</span> sent you a private message</p>
-                <p class="time-stamp">5 days ago</p>
-                <p class="pm">
-                    Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
-                </p>
-            </div>
-        </div>
-
-        <div class="notification">
-            <figure class="avatar">
-                <img src="images/avatar-kimberly-smith.webp" alt="Kimberly Smith's profile pic">
-            </figure>
-            <div class="notif-text">
-                <p><span class="name">Kimberly Smith</span> commented on your picture</p>
-                <p class="time-stamp">1 week ago</p>
-            </div>
-            <figure class="photo">
-                <img src="images/image-chess.webp" alt="Woman sitting behind chess board">
-            </figure>
-        </div>
-
-        <div class="notification">
-            <figure class="avatar">
-                <img src="images/avatar-nathan-peterson.webp" alt="Nathan Peterson's profile pic">
-            </figure>
-            <div class="notif-text">
-                <p><span class="name">Nathan Peterson</span> reacted to your recent post <span class="post-text">5 end-game strategies to increase your win rate</span></p>
-                <p class="time-stamp">2 weeks ago</p>
-            </div>
-        </div>
-
-        <div class="notification">
-            <figure class="avatar">
-                <img src="images/avatar-anna-kim.webp" alt="Anna Kim's profile pic">
-            </figure>
-            <div class="notif-text">
-                <p><span class="name">Anna Kim</span> left the group <span class="group">Chess Club</span></p>
-                <p class="time-stamp">2 weeks ago</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://allyceamidon.com/">Allyce Amidon</a>.
     </div>
 </body>
 
