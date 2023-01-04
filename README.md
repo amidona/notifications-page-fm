@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/amidona/notifications-page-fm](https://github.com/amidona/notifications-page-fm)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://amidona.github.io/notifications-page-fm/](https://amidona.github.io/notifications-page-fm/)
 
 ## My process
 
